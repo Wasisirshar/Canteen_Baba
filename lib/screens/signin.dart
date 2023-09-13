@@ -12,6 +12,7 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
         home: Scaffold(
           body: SafeArea(child: LoginScreen(),
           ),
