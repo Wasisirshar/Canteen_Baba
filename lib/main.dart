@@ -1,5 +1,6 @@
-import 'package:canteen_baba_app/screens/signin.dart';
 import 'package:flutter/material.dart';
+
+import 'login_widgets/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SignUp();
+    return const MaterialApp(
+      home: LoginScreen(),
+    );
   }
 }

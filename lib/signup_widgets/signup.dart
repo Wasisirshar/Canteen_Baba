@@ -1,4 +1,3 @@
-import 'package:canteen_baba_app/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -11,12 +10,6 @@ class SignUp extends StatefulWidget {
 class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: SafeArea(child: LoginScreen(),
-          ),
-        ),
-     );
+    return const Scaffold();
   }
 }

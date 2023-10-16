@@ -14,18 +14,22 @@ class LoginBtn extends StatefulWidget {
 class _LoginBtnState extends State<LoginBtn> {
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(
-      onPressed: widget.onPressed,
-      child: Text(
-        widget.text,
-        style: GoogleFonts.roboto(
-          color: Colors.white,
-          fontSize: 16,
+    return SizedBox(
+      width: 370,
+      height: 40,
+      child: OutlinedButton(
+        onPressed: widget.onPressed,
+        style: OutlinedButton.styleFrom(
+          backgroundColor: const Color(0xff1890FF),
+          padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 8),
         ),
-      ),
-      style: OutlinedButton.styleFrom(
-        backgroundColor: Color(0xff1890FF),
-        
+        child: Text(
+          widget.text,
+          style: GoogleFonts.roboto(
+            color: Colors.white,
+            fontSize: 16,
+          ),
+        ),
       ),
     );
   }

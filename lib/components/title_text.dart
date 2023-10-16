@@ -9,36 +9,27 @@ class TitleTextLogo extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(35.0),
+          padding: const EdgeInsets.symmetric(vertical: 60),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset(
                 'assets/images/logo.png',
                 fit: BoxFit.cover,
-                width: 45,
-                height: 46,
-              ),
-             const SizedBox(
                 width: 20,
+                height: 20,
+              ),
+              const SizedBox(
+                width: 6,
               ),
               Text(
                 'Canteen Baba',
                 style: GoogleFonts.roboto(
-                  fontSize: 33,
+                  fontSize: 20,
                   fontWeight: FontWeight.w500,
                 ),
               ),
             ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 20, right: 10),
-          child: Center(
-            child: Text('LOGIN \nAS CANTEEN ADMIN', style: GoogleFonts.roboto(
-              fontSize: 40,
-                color: const Color(0xff1890FF),
-              fontWeight: FontWeight.w500,),),
           ),
         ),
       ],
